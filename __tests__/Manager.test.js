@@ -1,37 +1,31 @@
 const Manager = require("../lib/Manager.js");
 
-
-jest.mock('../lib/Employee.js');
-
 test("create a manager object", ()  => {
-    const manager = new Manager();
+    const manager = new Manager("Dave Thomas", "td32001458", "td32001458@ipg.org", "(555)555-5555");
 
-    expect(manager.name).toEqual(expect.any(String));
-    expect(manager.id).toEqual(expect.any(String));
-    expect(manager.email).toEqual(expect.any(String));
-    expect(manager.officeNumber).toEqual(expect.any(String));
+    expect(manager.name).toBe("Dave Thomas");
+    expect(manager.id).toBe("td32001458");
+    expect(manager.email).toBe("td32001458@ipg.org");
+    expect(manager.officeNumber).toBe("(555)555-5555");
 });
 
 test("gets manager's name", () => {
-    const manager = new Manager();
-    expect(manager.getName()).toEqual(expect.any(String));
+    const manager = new Manager("Dave Thomas", "td32001458", "td32001458@ipg.org", "(555)555-5555");
+    expect(manager.name).toBe("Dave Thomas");
 });
 
 test("gets manager's id", () => {
-    const manager = new Manager();
-    expect(manager.getId()).toEqual(expect.any(String));
+    const manager = new Manager("Dave Thomas", "td32001458", "td32001458@ipg.org", "(555)555-5555");
+    expect(manager.id).toBe("td32001458");
 });
 
 test("gets manager's email", () => {
-    const manager = new Manager();
-    expect(manager.getEmail()).toEqual(expect.any(String));
+    const manager = new Manager("Dave Thomas", "td32001458", "td32001458@ipg.org", "(555)555-5555");
+    expect(manager.email).toBe("td32001458@ipg.org");
 });
 
 test("gets manager's role as object", () => {
-    const manager = new Manager();
+    const manager = new Manager("Dave Thomas", "td32001458", "td32001458@ipg.org", "(555)555-5555");
 
-    expect(manager.name).toBe("John Smith");
-    expect(manager.id).toEqual(expect.any(String));
-    expect(manager.email).toEqual(expect.any(String));
-    expect(manager.officeNumber).toEqual(expect.any(String));
+    expect(manager.getRole()).toBe("Manager");
 });

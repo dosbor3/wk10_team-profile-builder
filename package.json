@@ -18,5 +18,8 @@
   "homepage": "https://github.com/dosbor3/wk10_team-profile-builder#readme",
   "devDependencies": {
     "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
   }
 }
