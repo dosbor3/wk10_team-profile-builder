@@ -22,15 +22,18 @@ html {
     box-shadow: blanchedalmond;
     padding: 3rem;
     margin: 1.5rem;
-    color:aliceblue;   
+    color:aliceblue; 
+    border-radius: 5px;  
   }
   
   header {
     background-color: rgb(161, 200, 236);
     line-height: 5rem;
+    color: rgb(233, 248, 248);
     text-align: center;
     font-size: 36px;
     margin-top: 0;
+    border-radius: 5px;
   }
   
   h4 {
