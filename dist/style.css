@@ -1,0 +1,46 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    margin-top: 1.5em;
+    width: 100%;
+  }
+  .manager {
+      display: flex;
+  }
+  .card {
+    width: 15rem;
+    background-color: rgb(155, 167, 185);
+    box-shadow: blanchedalmond;
+    padding: 3rem;
+    margin: 1.5rem;
+    color:aliceblue;   
+  }
+  
+  header {
+    background-color: rgb(161, 200, 236);
+    line-height: 5rem;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+  }
+  
+  h4 {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(236, 247, 248);
+  }
+
+  h5 {
+    font-size: 18px;
+    color: rgb(240, 231, 231);
+  }
+  

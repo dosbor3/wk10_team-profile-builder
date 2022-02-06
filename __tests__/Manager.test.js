@@ -24,8 +24,13 @@ test("gets manager's email", () => {
     expect(manager.email).toBe("td32001458@ipg.org");
 });
 
+test("gets manager's office number", () => {
+    const manager = new Manager("Dave Thomas", "td32001458", "td32001458@ipg.org", "(555)555-5555");
+    expect(manager.officeNumber).toBe("(555)555-5555");
+});
+
 test("gets manager's role as object", () => {
     const manager = new Manager("Dave Thomas", "td32001458", "td32001458@ipg.org", "(555)555-5555");
-
+    
     expect(manager.getRole()).toBe("Manager");
 });

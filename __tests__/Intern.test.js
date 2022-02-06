@@ -27,6 +27,12 @@ test("gets intern's email", () => {
     expect(intern.email).toBe("td32001458@ipg.org");
 });
 
+test("gets intern's school", () => {
+    const intern = new Intern("Dave Thomas", "td32001458", "td32001458@ipg.org", "Rice University");
+    
+    expect(intern.school).toBe("Rice University");
+});
+
 test("gets intern's role as object", () => {    
     const intern = new Intern("Dave Thomas", "td32001458", "td32001458@ipg.org", "Rice University");
 

@@ -24,6 +24,11 @@ test("gets engineer's email", () => {
     expect(engineer.email).toBe("td32001458@ipg.org");
 });
 
+test("gets engineer's github", () => {
+    const engineer = new Engineer("Dave Thomas", "td32001458", "td32001458@ipg.org", "td3200");
+    expect(engineer.github).toBe("td3200");
+});
+
 test("gets engineer's role as object", () => {
     const engineer = new Engineer("Dave Thomas", "td32001458", "td32001458@ipg.org", "td3200");
 
