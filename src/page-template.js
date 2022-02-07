@@ -19,6 +19,7 @@ const generateTeam = teamArr => {
     // create the projects section
     const generateEngineer = engineer => {
         return `
+        <div class='container-fluid'>
         <section class='engineer' >
             <div class="card ">
                 <div class="card-body ">
@@ -80,9 +81,8 @@ module.exports = templateData => {
         </div>
     </header>
     <main>
-        <div class='container-fluid'>
-            ${generateTeam(templateData)}
-        </div>
+        ${generateTeam(templateData)}
+        </div>        
     </main>
     <script src='../index.js'></script>
     </body>

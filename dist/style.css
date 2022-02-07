@@ -4,20 +4,26 @@ html {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+
+  .container-fluid {
+    display:flex;
+  }
   
-  section {
-    display: flex;
-    flex-direction: row;
+  
+  section {       
     justify-content: center;
-    /*flex-wrap: wrap;*/
     margin-top: 1.5em;
     width: 100%;
   }
-  .container-flid {
-      display: flex;
+
+  .manager {
+    padding-left: 50em;
+    justify-content: space-around;
   }
-  .engineer .intern {
+  
+  .engineer .intern {    
     flex-wrap: wrap;
+    justify-content: space-between;   
   }
   .card {
     width: 15rem;
