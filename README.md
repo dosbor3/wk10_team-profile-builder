@@ -56,7 +56,7 @@ Please make sure to update tests as appropriate.  Source code can be found at ht
 
 
 ## Image 1 of Application 
-![applicationImage](https://user-images.githubusercontent.com/40706088/151722257-a445292a-e961-41cf-9243-081c3a5c8cc4.jpg)
+![image](https://user-images.githubusercontent.com/40706088/152721846-23848f06-97cd-464e-8a26-6f0a04654a63.png)
 
 
 
