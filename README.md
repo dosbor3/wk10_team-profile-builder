@@ -63,10 +63,10 @@ Please make sure to update tests as appropriate.  Source code can be found at ht
 
 
 ## Image 2 of Application
-![applicationImage2](https://user-images.githubusercontent.com/40706088/151722352-280586a1-a854-4a53-8cdc-596bd19c0aec.jpg)
+![image](https://user-images.githubusercontent.com/40706088/152721950-1f4a7c9f-3356-4bc2-9b1e-41e46ee19a3e.png)
 
 ## Video Demonstration of Application
-![applicationVideo] (https://watch.screencastify.com/v/Q2pg0dbNZiW4R2z7iNpF) 
+https://watch.screencastify.com/v/HnAHTNIYXiNcmEIlf8o0
 
 
 
