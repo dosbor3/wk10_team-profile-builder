@@ -13,8 +13,11 @@ html {
     margin-top: 1.5em;
     width: 100%;
   }
-  .manager {
+  .container-flid {
       display: flex;
+  }
+  .engineer .intern {
+    flex-wrap: wrap;
   }
   .card {
     width: 15rem;

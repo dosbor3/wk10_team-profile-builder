@@ -2,12 +2,12 @@ const generateTeam = teamArr => {
     // create the about section
     const generateManager = manager => {
         return `
-        <section class='manager  mt-4 mb-1'>
-            <div class="card border-primary mx-1 shadow ">
-                    <div class="card-body text-primary card-header">
+        <section class='manager '>
+            <div class="card ">
+                    <div class="card-body ">
                         <h4>Manager: ${manager.getName()}'s Team</h4>
                     </div>
-                    <div class="card-body text-secondary">
+                    <div class="card-body ">
                         <h5 class="card-title">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></h5>
                         <h5 class="card-title">Employee ID: ${manager.getId()}</h5>
                         <h5 class="card-title">Office #: ${manager.getOfficeNumber()}</h5>
@@ -19,40 +19,40 @@ const generateTeam = teamArr => {
     // create the projects section
     const generateEngineer = engineer => {
         return `
-        <div class="card border-primary mx-1 shadow ">
-            <div class="card-body text-primary card-header">
-                <h4>Engineer: ${engineer.getName()}</h4>
+        <section class='engineer' >
+            <div class="card ">
+                <div class="card-body ">
+                    <h4>Engineer: ${engineer.getName()}</h4>
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></h5>
+                    <h5 class="card-title">Employee ID: ${engineer.getId()}</h5>
+                    <h5 class="card-title">Github: <a href="https://www.github.com/${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a></h5>
+                </div>
             </div>
-            <div class="card-body text-secondary">
-                <h5 class="card-title">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></h5>
-                <h5 class="card-title">Employee ID: ${engineer.getId()}</h5>
-                <h5 class="card-title">Github: <a href="https://www.github.com/${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a></h5>
-            </div>
-        </div>`     
+        </section>`     
     };
 
     const generateIntern = intern => {
         return `
-        <div class="card border-primary mx-1 shadow ">
-            <div class="card-body text-primary card-header">
+        <section class='intern' >
+        <div class="card ">
+            <div class="card-body ">
                 <h4>Intern: ${intern.getName()}</h4>
             </div>
-            <div class="card-body text-secondary">
+            <div class="card-body ">
                 <h5 class="card-title">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></h5>
                 <h5 class="card-title">Employee ID: ${intern.getId()}</h5>
                 <h5 class="card-title">School: ${intern.getSchool()}</h5>
             </div>
-      </div>`
+      </div>
+      </section>`
     }
 
     const html = [];
-    html.push(teamArr.filter(employee => employee.getRole() === 'Manager').map(manager => generateManager(manager)));
-    html.push("<section class='engineer  d-flex flex-row ' >")
-    html.push(teamArr.filter(employee => employee.getRole() === 'Engineer').map(engineer => generateEngineer(engineer)).join(''));
-    html.push("</section>")
-    html.push("<section class='intern  d-flex flex-row ' >")
-    html.push(teamArr.filter(employee => employee.getRole() === 'Intern').map(intern => generateIntern(intern)).join(''));
-    html.push("</section>")
+    html.push(teamArr.filter(employee => employee.getRole() === 'Manager').map(manager => generateManager(manager)));    
+    html.push(teamArr.filter(employee => employee.getRole() === 'Engineer').map(engineer => generateEngineer(engineer)).join(''));    
+    html.push(teamArr.filter(employee => employee.getRole() === 'Intern').map(intern => generateIntern(intern)).join(''));    
     return html.join('');
 }
 
@@ -75,12 +75,12 @@ module.exports = templateData => {
     
     <body>
     <header>
-        <div class="jumbotron-fluid d-flex justify-content-center">
+        <div>
             <h2>My Amazing Team</h2>
         </div>
     </header>
     <main>
-        <div class='container-fluid  d-flex align-items-center flex-column'>
+        <div class='container-fluid'>
             ${generateTeam(templateData)}
         </div>
     </main>
